@@ -11,9 +11,9 @@ import datetime as dt
 #################################################
 # Database Setup
 #################################################
-#db_path = "../Resources/hawaii.sqlite"
-#engine = create_engine(f"sqlite:///{db_path}")
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+db_path = "./Resources/hawaii.sqlite"
+engine = create_engine(f"sqlite:///{db_path}")
+#engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 # reflect an existing database into a new model
 Base = automap_base()
